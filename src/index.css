@@ -1173,37 +1173,6 @@ h2 {
   box-shadow: 0 0 18px rgba(0, 130, 255, 0.2);
 }
 
-.brand-logo-crop {
-  width: 68px;
-  height: 68px;
-  display: block;
-  flex: 0 0 auto;
-  background-image: url("/brand/maia-cyber-original.jpeg");
-  background-repeat: no-repeat;
-  background-size: 160%;
-  background-position: 50% 49%;
-  border-radius: 5px;
-  box-shadow: 0 0 22px rgba(0, 130, 255, 0.2);
-}
-
-.brand-logo-crop-footer {
-  width: 92px;
-  height: 92px;
-}
-
-.brand-lockup-image {
-  width: 72px;
-  height: 68px;
-  display: block;
-  object-fit: contain;
-  filter: drop-shadow(0 0 9px rgba(26, 180, 255, 0.28));
-}
-
-.brand-lockup-image-footer {
-  width: 132px;
-  height: 122px;
-}
-
 .brand-lockup {
   display: inline-flex;
   align-items: center;
@@ -2088,16 +2057,6 @@ main {
   .brand-logo {
     width: 42px;
     height: 42px;
-  }
-
-  .brand-logo-crop {
-    width: 58px;
-    height: 58px;
-  }
-
-  .brand-logo-crop-footer {
-    width: 84px;
-    height: 84px;
   }
 
   .brand-name {
