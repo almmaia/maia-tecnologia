@@ -1,277 +1,223 @@
+import { useEffect, useRef, useState } from "react";
 import {
   ArrowRight,
-  Code2,
-  Network,
-  ShieldCheck,
-  Sparkles,
-  LifeBuoy,
-  Zap,
+  MoveUpRight,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import DigitalScene from "../components/DigitalScene";
 
-const WHATSAPP = "https://wa.me/5548998141388?text=Olá%2C%20vim%20pelo%20site%20da%20Maia%20Cyber%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto.";
+const WHATSAPP =
+  "https://wa.me/5548998141388?text=Olá%2C%20vim%20pelo%20site%20da%20Maia%20Tecnologia%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto.";
+
+const scenes = [
+  {
+    kicker: "CONTEXTO",
+    core: "ENTENDER",
+    title: "Antes do código, entendemos o sistema",
+    text: "Pessoas, processos, dados e objetivos entram no projeto antes da primeira decisão técnica.",
+  },
+  {
+    kicker: "PRODUTO",
+    core: "CONSTRUIR",
+    title: "Design e engenharia avançam juntos",
+    text: "A experiência é validada enquanto a arquitetura ganha forma, reduzindo risco e retrabalho.",
+  },
+  {
+    kicker: "OPERAÇÃO",
+    core: "EVOLUIR",
+    title: "O produto começa quando entra em uso",
+    text: "Publicação, observabilidade, suporte e evolução fazem parte da mesma entrega.",
+  },
+];
+
+const outcomes = [
+  { title: "Criar um produto digital", text: "Do conceito ao software em produção, com produto, experiência e engenharia na mesma frente." },
+  { title: "Organizar uma operação", text: "Sistemas sob medida para substituir controles dispersos e dar clareza ao trabalho diário." },
+  { title: "Conectar sistemas e dados", text: "Integrações e APIs para reduzir retrabalho e manter informações consistentes entre plataformas." },
+  { title: "Evoluir o que já existe", text: "Modernização, novas jornadas e sustentação técnica sem interromper a operação." },
+];
 
 function Home() {
+  const heroRef = useRef<HTMLElement>(null);
+  const storyRef = useRef<HTMLElement>(null);
+  const lastSceneChangeRef = useRef(0);
+  const [activeScene, setActiveScene] = useState(0);
+
+  useEffect(() => {
+    let frame = 0;
+
+    const updateExperience = () => {
+      frame = 0;
+      const hero = heroRef.current;
+      if (hero) {
+        const heroRect = hero.getBoundingClientRect();
+        const heroDistance = Math.max(hero.offsetHeight - window.innerHeight, 1);
+        const heroProgress = Math.min(Math.max(-heroRect.top / heroDistance, 0), 1);
+        hero.style.setProperty("--hero-progress", heroProgress.toFixed(3));
+      }
+
+      const story = storyRef.current;
+      if (!story) return;
+      const storyRect = story.getBoundingClientRect();
+      const storyDistance = Math.max(story.offsetHeight - window.innerHeight, 1);
+      const storyProgress = Math.min(Math.max(-storyRect.top / storyDistance, 0), 1);
+      story.style.setProperty("--story-progress", storyProgress.toFixed(3));
+      const targetScene = Math.min(2, Math.floor(storyProgress * 3));
+
+      setActiveScene((currentScene) => {
+        const now = window.performance.now();
+        if (
+          targetScene === currentScene ||
+          now - lastSceneChangeRef.current < 520
+        ) {
+          return currentScene;
+        }
+
+        lastSceneChangeRef.current = now;
+        return targetScene > currentScene ? currentScene + 1 : currentScene - 1;
+      });
+
+    };
+
+    const onScroll = () => {
+      if (!frame) frame = window.requestAnimationFrame(updateExperience);
+    };
+
+    updateExperience();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+      if (frame) window.cancelAnimationFrame(frame);
+    };
+  }, []);
+
   return (
     <>
-      {/* HERO */}
-      <section className="hero">
+      <section className="hero hero-premium hero-reveal" ref={heroRef}>
         <div className="hero-grid" />
-
-        <div className="hero-glow hero-glow-one" />
-        <div className="hero-glow hero-glow-two" />
-
-        <div className="container hero-content">
-          <div className="hero-badge">
-            <span className="status-dot" />
-            SOFTWARE • TECNOLOGIA • SOLUÇÕES DIGITAIS
-          </div>
-
-          <div className="hero-layout">
-            <div className="hero-text">
-              <h1>
-                Tecnologia para impulsionar
-                <span> o seu negócio</span>
-              </h1>
-
-              <p className="hero-description">
-                Desenvolvemos sistemas, plataformas, automações e integrações
-                que simplificam operações e apoiam o crescimento de empresas.
-              </p>
-
-              <div className="hero-actions">
-                <a
-                  href={WHATSAPP}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="button button-primary"
-                >
-                  Fale com a Maia Cyber
-                  <ArrowRight size={19} />
-                </a>
-
-                <Link to="/solucoes" className="button button-secondary">
-                  Conheça nossas soluções
-                </Link>
-              </div>
+        <div className="container hero-content executive-hero-layout">
+          <div className="premium-hero-copy">
+            <div className="hero-badge">
+              ENGENHARIA / PRODUTO / DADOS / AUTOMAÇÃO
             </div>
 
-            {/* VISUAL CONSTRUÍDO 100% EM CÓDIGO */}
-            <div className="hero-visual">
-              <div className="code-window">
-                <div className="code-header">
-                  <div className="window-dots">
-                    <span />
-                    <span />
-                    <span />
-                  </div>
+            <h1>
+              Tecnologia para
+              <span> novos desafios</span>
+            </h1>
 
-                  <span>Solução digital em desenvolvimento</span>
-                </div>
+            <p className="hero-description">
+              Da estratégia à operação: projetamos sistemas, plataformas,
+              automações e integrações que resolvem necessidades específicas
+              e continuam evoluindo com o negócio.
+            </p>
 
-                <div className="code-content">
-                  <span className="code-line">
-                    <b>const</b> solution = {"{"}
-                  </span>
-
-                  <span className="code-line indent">
-                    technology: <em>"modern"</em>,
-                  </span>
-
-                  <span className="code-line indent">
-                    security: <em>true</em>,
-                  </span>
-
-                  <span className="code-line indent">
-                    scalability: <em>true</em>,
-                  </span>
-
-                  <span className="code-line indent">
-                    innovation: <em>true</em>,
-                  </span>
-
-                  <span className="code-line">
-                    {"}"}
-                  </span>
-
-                  <span className="code-cursor">_</span>
-                </div>
-              </div>
-
-              <div className="floating-card floating-card-one">
-                <Code2 size={20} />
-                <div>
-                  <strong>Software</strong>
-                  <span>Sob medida</span>
-                </div>
-              </div>
-
-              <div className="floating-card floating-card-two">
-                <Network size={20} />
-                <div>
-                  <strong>Integração</strong>
-                  <span>Sistemas conectados</span>
-                </div>
-              </div>
-
-              <div className="floating-card floating-card-three">
-                <ShieldCheck size={20} />
-                <div>
-                  <strong>Segurança</strong>
-                  <span>Desde o início</span>
-                </div>
-              </div>
+            <div className="hero-actions">
+              <a href={WHATSAPP} target="_blank" rel="noreferrer" className="button button-primary">
+                Fale sobre sua necessidade <ArrowRight size={19} />
+              </a>
+              <Link to="/processo" className="button button-ghost">
+                Veja como trabalhamos
+              </Link>
             </div>
           </div>
 
-          <div className="hero-trust">
-            <div>
-              <Code2 size={20} />
-              <span>Software sob medida</span>
+          <DigitalScene variant="hero" />
+
+        </div>
+      </section>
+
+      <div className="studio-reel" aria-label="Áreas de atuação da Maia Tecnologia">
+        <div>
+          <span>Produtos digitais</span><i />
+          <span>Engenharia de software</span><i />
+          <span>Automação</span><i />
+          <span>Dados e inteligência</span><i />
+          <span>Experiências web</span><i />
+          <span>Produtos digitais</span><i />
+          <span>Engenharia de software</span><i />
+          <span>Automação</span><i />
+        </div>
+      </div>
+
+      <section className="immersive-story" ref={storyRef}>
+        <div className="immersive-sticky">
+          <div className="container immersive-layout">
+            <div className="immersive-copy">
+              <span className="section-label">{scenes[activeScene].kicker}</span>
+              <h2>{scenes[activeScene].title}</h2>
+              <p>{scenes[activeScene].text}</p>
+              <div className="story-progress" aria-hidden="true">
+                {scenes.map((scene, index) => (
+                  <i className={index <= activeScene ? "active" : ""} key={scene.kicker} />
+                ))}
+              </div>
             </div>
 
-            <div>
-              <Network size={20} />
-              <span>Integração de sistemas</span>
-            </div>
-
-            <div>
-              <ShieldCheck size={20} />
-              <span>Segurança</span>
-            </div>
-
-            <div>
-              <Zap size={20} />
-              <span>Alta performance</span>
-            </div>
+            <DigitalScene variant="story" phase={activeScene} />
           </div>
         </div>
       </section>
 
-      {/* INTRODUÇÃO */}
-      <section className="section home-intro">
-        <div className="container two-columns">
+      <section className="section work-intro">
+        <div className="container work-intro-grid">
           <div>
-            <span className="section-label">MAIA CYBER</span>
-
-            <h2>
-              Tecnologia construída
-              <span> com visão de negócio</span>
-            </h2>
+            <span className="section-label">O QUE ENTREGAMOS</span>
+            <h2>Do planejamento à operação</h2>
           </div>
+          <p>
+            Reunimos produto, experiência e engenharia para transformar uma
+            necessidade concreta em software que funciona na rotina.
+          </p>
+        </div>
 
-          <div className="section-text">
-            <p>
-              Atuamos em parceria com cada cliente, compreendendo seu contexto
-              antes de definir a melhor direção técnica.
-            </p>
-
-            <p>
-              Com comunicação transparente e acompanhamento próximo, levamos
-              cada projeto da estratégia à entrega e à evolução contínua.
-            </p>
-
-            <Link to="/sobre" className="text-link">
-              Conheça a Maia Cyber
-              <ArrowRight size={18} />
+        <div className="container outcome-list">
+          {outcomes.map((outcome) => (
+            <Link to="/solucoes" key={outcome.title}>
+              <MoveUpRight aria-hidden="true" />
+              <strong>{outcome.title}</strong>
+              <p>{outcome.text}</p>
             </Link>
-          </div>
+          ))}
         </div>
       </section>
 
-      {/* DESTAQUES */}
-      <section className="section highlights">
+      <section className="product-film" aria-label="Tecnologia em movimento">
+        <video autoPlay muted loop playsInline preload="metadata">
+          <source src="/video/ai-innovation-3d.mp4" type="video/mp4" />
+        </video>
+        <div className="product-film-caption" aria-hidden="true">
+          <span>PRODUTO</span><i />
+          <span>AUTOMAÇÃO</span><i />
+          <span>DADOS</span>
+        </div>
+      </section>
+
+      <section className="selected-work">
         <div className="container">
-          <div className="section-heading">
-            <span className="section-label">O QUE FAZEMOS</span>
-
-            <h2>
-              Desenvolvimento e integração
-              <span> com evolução contínua</span>
-            </h2>
-
-            <p>
-              Reunimos desenvolvimento, integração, automação e suporte para
-              transformar necessidades concretas em produtos digitais confiáveis.
-            </p>
+          <div className="selected-work-head">
+            <div><span className="section-label">TRABALHOS SELECIONADOS</span><h2>Soluções desenvolvidas para diferentes operações</h2></div>
+            <Link to="/cases">Ver todos os cases <ArrowRight size={18} /></Link>
           </div>
-
-          <div className="highlight-grid">
-            <article className="highlight-card">
-              <div className="highlight-icon">
-                <Code2 size={25} />
-              </div>
-
-              <h3>Desenvolvimento</h3>
-
-              <p>
-                Sistemas e aplicações desenvolvidos de acordo com as
-                necessidades específicas da sua empresa.
-              </p>
-            </article>
-
-            <article className="highlight-card">
-              <div className="highlight-icon">
-                <Network size={25} />
-              </div>
-
-              <h3>Integração</h3>
-
-              <p>
-                Conectamos sistemas, APIs e plataformas para tornar seus
-                processos mais eficientes.
-              </p>
-            </article>
-
-            <article className="highlight-card">
-              <div className="highlight-icon">
-                <Sparkles size={25} />
-              </div>
-
-              <h3>Inovação</h3>
-
-              <p>
-                Utilizamos tecnologia moderna para criar soluções preparadas
-                para os desafios do mercado.
-              </p>
-            </article>
-
-            <article className="highlight-card">
-              <div className="highlight-icon">
-                <LifeBuoy size={25} />
-              </div>
-
-              <h3>Suporte e evolução</h3>
-
-              <p>
-                Acompanhamos melhorias e novas necessidades para sua solução
-                continuar evoluindo com o negócio.
-              </p>
-            </article>
+          <div className="selected-work-list">
+            <Link to="/cases"><span>Operação financeira</span><strong>Uma plataforma para organizar jornadas, informações e rotinas</strong><ArrowRight /></Link>
+            <Link to="/cases"><span>Cultura e comunidade</span><strong>Uma experiência digital para aproximar pessoas, atividades e gestão</strong><ArrowRight /></Link>
+            <Link to="/cases"><span>Dados e acompanhamento</span><strong>Indicadores estruturados para tornar decisões mais claras</strong><ArrowRight /></Link>
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="home-cta">
+      <section className="home-cta home-cta-editorial">
         <div className="container home-cta-content">
           <div>
-            <span className="section-label">TEM UM PROJETO?</span>
-
-            <h2>
-              Fale com a Maia Cyber
-              <span> sobre o seu projeto</span>
-            </h2>
+            <span className="section-label">CONVERSE COM QUEM CONSTRÓI</span>
+            <h2>Vamos construir a próxima solução</h2>
           </div>
-
-          <a
-            href={WHATSAPP}
-            target="_blank"
-            rel="noreferrer"
-            className="button button-primary"
-          >
-            Vamos conversar
-            <ArrowRight size={19} />
+          <a href={WHATSAPP} target="_blank" rel="noreferrer" className="button button-primary">
+            Fale com a Maia Tecnologia <ArrowRight size={19} />
           </a>
         </div>
       </section>

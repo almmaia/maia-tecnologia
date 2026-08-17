@@ -12,7 +12,7 @@ function Footer() {
             <BrandMark variant="vertical" />
           </Link>
 
-          <p>Desenvolvimento de software personalizado em Florianópolis, Santa Catarina, e em todo o Brasil.</p>
+          <p>Florianópolis, Santa Catarina <span aria-hidden="true">•</span> Atendimento nacional</p>
         </div>
 
         <div className="footer-navigation">
@@ -21,8 +21,8 @@ function Footer() {
             <Link to="/">Início</Link>
             <Link to="/sobre">Sobre</Link>
             <Link to="/solucoes">Soluções</Link>
-            <Link to="/processo">Processo</Link>
-            <Link to="/cases">Áreas de atuação</Link>
+            <Link to="/processo">Como trabalhamos</Link>
+            <Link to="/cases">Experiências</Link>
             <Link to="/contato">Contato</Link>
           </div>
         </div>
@@ -31,34 +31,31 @@ function Footer() {
           <h3>Soluções</h3>
           <div className="footer-links">
             <Link to="/solucoes">Software sob medida</Link>
-            <Link to="/solucoes">Plataformas web</Link>
             <Link to="/solucoes">APIs e integrações</Link>
             <Link to="/solucoes">Automações</Link>
-            <Link to="/solucoes">Suporte</Link>
+            <Link to="/solucoes">Dados e inteligência</Link>
           </div>
         </div>
 
         <div className="footer-contact">
           <h3>Redes e contato</h3>
-          <a className="social-contact whatsapp-contact" href="https://wa.me/5548998141388?text=Olá%2C%20vim%20pelo%20site%20da%20Maia%20Cyber." target="_blank" rel="noreferrer">
+          <div className="footer-social-icons" aria-label="Canais de contato da Maia Tecnologia">
+          <a className="social-contact whatsapp-contact" href="https://wa.me/5548998141388?text=Olá%2C%20vim%20pelo%20site%20da%20Maia%20Tecnologia." target="_blank" rel="noreferrer" aria-label="Conversar com a Maia Tecnologia pelo WhatsApp" title="WhatsApp">
             <span className="social-icon"><FaWhatsapp size={19} /></span>
-            <span><small>Converse pelo</small>WhatsApp</span>
           </a>
-          <a className="social-contact" href="mailto:alanmaix@gmail.com?subject=Contato pelo site Maia Cyber">
+          <a className="social-contact" href="mailto:alanmaix@gmail.com?subject=Contato pelo site Maia Tecnologia" aria-label="Enviar um e-mail para a Maia Tecnologia" title="E-mail">
             <span className="social-icon"><Mail size={18} /></span>
-            <span><small>Envie um e-mail</small>alanmaix@gmail.com</span>
           </a>
-          <a className="social-contact" href="https://www.instagram.com/maiacyber/" target="_blank" rel="noreferrer">
+          <a className="social-contact" href="https://www.instagram.com/maiacyber/" target="_blank" rel="noreferrer" aria-label="Abrir o Instagram da Maia Tecnologia" title="Instagram">
             <span className="social-icon"><FaInstagram size={19} /></span>
-            <span><small>Siga no Instagram</small>@maiacyber</span>
           </a>
+          </div>
         </div>
       </div>
 
       <div className="container footer-bottom">
-        <span>© 2026 Maia Cyber. Todos os direitos reservados.</span>
+        <span>© 2026 Maia Tecnologia. Todos os direitos reservados.</span>
 
-        <span>Software • Tecnologia • Soluções Digitais</span>
       </div>
     </footer>
   );

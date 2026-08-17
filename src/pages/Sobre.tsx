@@ -11,40 +11,38 @@ function Sobre() {
     <section className="section about-page">
       <div className="container">
         <div className="section-heading">
-          <span className="section-label">SOBRE A MAIA CYBER</span>
+          <span className="section-label">SOBRE A MAIA TECNOLOGIA</span>
 
           <h1>
-            Desenvolvimento com
-            <span> qualidade e confiança</span>
+            Tecnologia com
+            <span> visão de negócio</span>
           </h1>
 
           <p>
-            A Maia Cyber é uma empresa de desenvolvimento de software focada
-            em criar soluções digitais para empresas que buscam evoluir,
-            automatizar processos e utilizar a tecnologia de forma estratégica.
+            A Maia Tecnologia nasceu para desenvolver soluções
+            digitais que aproximam tecnologia, operação e resultado.
           </p>
         </div>
 
         <div className="two-columns about-content">
           <div>
-            <h2>Clareza do planejamento à entrega</h2>
+            <h2>Participação direta em cada etapa</h2>
           </div>
 
           <div className="section-text">
             <p>
-              Desenvolvemos sistemas, plataformas e integrações de acordo com
-              as necessidades de cada negócio.
+              Trabalhamos com empresas, profissionais e organizações que
+              precisam construir, integrar ou aprimorar produtos digitais.
             </p>
 
             <p>
-              Nosso objetivo é transformar problemas complexos em soluções
-              simples, eficientes e escaláveis.
+              Cada projeto começa pela compreensão do contexto. Só depois
+              definimos arquitetura, prioridades e tecnologia.
             </p>
 
             <p>
-              Combinamos desenvolvimento de software, automação, integração de
-              sistemas, cloud e segurança para apoiar empresas em sua evolução
-              digital.
+              O resultado é uma solução coerente com a realidade do cliente,
+              acompanhada por comunicação direta e decisões técnicas claras.
             </p>
           </div>
         </div>
@@ -55,10 +53,10 @@ function Sobre() {
               <Sparkles size={22} />
             </div>
 
-            <h3>Inovação</h3>
+            <h3>Clareza</h3>
 
             <p>
-              Buscamos soluções modernas e práticas para desafios reais.
+              Explicamos escolhas, prioridades e limites sem esconder a complexidade.
             </p>
           </div>
 
@@ -67,10 +65,10 @@ function Sobre() {
               <ShieldCheck size={22} />
             </div>
 
-            <h3>Segurança</h3>
+            <h3>Responsabilidade</h3>
 
             <p>
-              Desenvolvemos pensando na proteção dos sistemas e dados.
+              Tratamos cada produto como parte importante da operação de quem confia no nosso trabalho.
             </p>
           </div>
 
@@ -79,10 +77,10 @@ function Sobre() {
               <Check size={22} />
             </div>
 
-            <h3>Qualidade</h3>
+            <h3>Qualidade técnica</h3>
 
             <p>
-              Valorizamos soluções organizadas, confiáveis e sustentáveis.
+              Construímos soluções organizadas, confiáveis e preparadas para manutenção.
             </p>
           </div>
 
@@ -91,10 +89,10 @@ function Sobre() {
               <Layers3 size={22} />
             </div>
 
-            <h3>Evolução</h3>
+            <h3>Continuidade</h3>
 
             <p>
-              Criamos soluções preparadas para acompanhar o crescimento.
+              O trabalho continua depois da publicação, com acompanhamento e evolução.
             </p>
           </div>
         </div>
@@ -112,22 +110,23 @@ function Sobre() {
           </article>
         </div>
 
-        <div className="founder-card">
+        <div className="founder-card founder-editorial">
           <div className="founder-photo">
-            <img src="/team/alan-maia.jpg" alt="Alan Maia, fundador e desenvolvedor de software da Maia Cyber" />
+            <img src="/team/alan-maia.jpg" alt="Alan Maia, fundador e desenvolvedor de software da Maia Tecnologia" />
           </div>
           <div>
             <span className="section-label">QUEM ESTÁ À FRENTE</span>
             <h2>Alan Maia</h2>
             <strong>Fundador e Desenvolvedor de Software</strong>
-            <p>Responsável por entender cada desafio e conduzir a criação de soluções digitais alinhadas às necessidades do negócio.</p>
+            <p>Atua diretamente no entendimento de cada necessidade, nas decisões técnicas e no desenvolvimento das soluções da Maia Tecnologia.</p>
+            <span className="founder-location">Florianópolis, Santa Catarina • Atendimento nacional</span>
             <a
-              href="https://wa.me/5548998141388?text=Olá%2C%20vim%20pelo%20site%20da%20Maia%20Cyber%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."
+              href="https://wa.me/5548998141388?text=Olá%2C%20vim%20pelo%20site%20da%20Maia%20Tecnologia%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."
               target="_blank"
               rel="noreferrer"
               className="button button-primary founder-button"
             >
-              Fale com a Maia Cyber <ArrowRight size={18} />
+              Fale com a Maia Tecnologia <ArrowRight size={18} />
             </a>
           </div>
         </div>

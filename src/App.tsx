@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
-import { FaWhatsapp } from "react-icons/fa";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 import Home from "./pages/Home";
 import Sobre from "./pages/Sobre";
@@ -15,28 +15,28 @@ import "./index.css";
 
 const pageMetadata: Record<string, { title: string; description: string }> = {
   "/": {
-    title: "Maia Cyber | Desenvolvimento de Software em todo o Brasil",
-    description: "Desenvolvimento de software, sistemas, plataformas, automações, APIs, dados, dashboards, integrações e inteligência artificial para empresas em Florianópolis, Ananindeua, Belém e todo o Brasil.",
+    title: "Maia Tecnologia | Desenvolvimento de Software em Florianópolis",
+    description: "Empresa de desenvolvimento de software em Florianópolis, Santa Catarina. Sistemas, plataformas, automações, IA, APIs, dados e integrações com atendimento nacional.",
   },
   "/sobre": {
-    title: "Sobre a Maia Cyber | Desenvolvimento de Software para Empresas",
-    description: "Conheça a Maia Cyber, empresa de desenvolvimento de software fundada por Alan Maia em Ananindeua, Pará.",
+    title: "Sobre a Maia Tecnologia | Desenvolvimento de Software",
+    description: "Conheça a Maia Tecnologia, empresa de desenvolvimento de software fundada por Alan Maia, sediada em Florianópolis, Santa Catarina, com atendimento nacional.",
   },
   "/solucoes": {
-    title: "Soluções em Software e Sistemas Personalizados | Maia Cyber",
+    title: "Soluções em Software e Sistemas Personalizados | Maia Tecnologia",
     description: "Desenvolvimento de sistemas, plataformas web, aplicações mobile, automações, APIs, dados, dashboards, integrações, inteligência artificial, cloud e suporte.",
   },
   "/processo": {
-    title: "Como trabalhamos | Maia Cyber",
-    description: "Do entendimento à evolução: conheça o processo da Maia Cyber para criar soluções digitais personalizadas.",
+    title: "Como trabalhamos | Maia Tecnologia",
+    description: "Do entendimento à evolução: conheça o processo da Maia Tecnologia para criar soluções digitais personalizadas.",
   },
   "/cases": {
-    title: "Áreas de Atuação em Software e Tecnologia | Maia Cyber",
-    description: "Conheça os tipos de sistemas, plataformas e soluções digitais personalizadas que a Maia Cyber pode desenvolver para empresas.",
+    title: "Cases e Experiências em Software | Maia Tecnologia",
+    description: "Conheça experiências da Maia Tecnologia com plataformas, automações, integrações, dados, dashboards e produtos digitais.",
   },
   "/contato": {
-    title: "Fale com a Maia Cyber em Florianópolis | Solicite um orçamento",
-    description: "Fale com a Maia Cyber sobre sistemas, plataformas, automações, APIs, dados e projetos de software em Florianópolis, Santa Catarina e todo o Brasil.",
+    title: "Fale com a Maia Tecnologia em Florianópolis | Solicite um orçamento",
+    description: "Fale com a Maia Tecnologia sobre sistemas, plataformas, automações, inteligência artificial, APIs, dados e projetos de software em Santa Catarina e todo o Brasil.",
   },
 };
 
@@ -48,7 +48,7 @@ function PageBehavior() {
     const metadata = pageMetadata[pathname] ?? pageMetadata["/"];
     document.title = metadata.title;
     document.querySelector('meta[name="description"]')?.setAttribute("content", metadata.description);
-    document.querySelector('link[rel="canonical"]')?.setAttribute("href", `https://maiacyber.me${pathname === "/" ? "/" : pathname}`);
+    document.querySelector('link[rel="canonical"]')?.setAttribute("href", `https://www.maiacyber.me${pathname === "/" ? "/" : pathname}`);
   }, [pathname]);
 
   return null;
@@ -74,16 +74,7 @@ function App() {
         </main>
 
         <Footer />
-        <a
-          className="whatsapp-button"
-          href="https://wa.me/5548998141388?text=Olá%2C%20vim%20pelo%20site%20da%20Maia%20Cyber%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Conversar com a Maia Cyber pelo WhatsApp"
-          title="Fale conosco pelo WhatsApp"
-        >
-          <FaWhatsapp size={25} />
-        </a>
+        <WhatsAppButton />
       </div>
     </BrowserRouter>
   );

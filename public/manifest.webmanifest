@@ -1,7 +1,7 @@
 {
-  "name": "Maia Cyber",
-  "short_name": "Maia Cyber",
-  "description": "Soluções digitais personalizadas para empresas.",
+  "name": "Maia Tecnologia",
+  "short_name": "Maia",
+  "description": "Desenvolvimento de software e soluções digitais em Florianópolis, Santa Catarina, com atendimento em todo o Brasil.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#06111f",
