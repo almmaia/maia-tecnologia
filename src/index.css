@@ -4885,6 +4885,18 @@ html,body,#root,.app{width:100%;max-width:100%;min-width:0;background:#0a0c0f;ov
 .footer-bottom{margin-bottom:0!important;padding-bottom:8px!important}
 @media(max-width:760px){.footer{padding-bottom:0!important}}
 
+/* Ajuste pontual: localização centralizada e WhatsApp junto ao canto. */
+.footer-brand p{
+  width:100%!important;
+  text-align:center!important;
+}
+.whatsapp-assistant{
+  right:max(6px,env(safe-area-inset-right))!important;
+}
+@media(max-width:640px){
+  .whatsapp-assistant{right:max(6px,env(safe-area-inset-right))!important}
+}
+
 /* Narrativa: três cenas completas, sem corte em telas baixas ou estreitas */
 .immersive-story{height:280vh!important}
 .immersive-sticky{min-height:0!important}
