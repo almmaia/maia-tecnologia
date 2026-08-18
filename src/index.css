@@ -4885,6 +4885,22 @@ html,body,#root,.app{width:100%;max-width:100%;min-width:0;background:#0a0c0f;ov
 .footer-bottom{margin-bottom:0!important;padding-bottom:8px!important}
 @media(max-width:760px){.footer{padding-bottom:0!important}}
 
+/* Páginas de serviço: conteúdo editorial indexável sem alterar a home */
+.seo-service-page{background:#f4f2ec;color:#111;padding-top:150px}
+.seo-service-shell{max-width:1160px}
+.seo-service-hero{max-width:900px;padding:24px 0 90px}
+.seo-service-hero h1{max-width:900px;margin:18px 0 24px;font-size:clamp(46px,6.4vw,84px);line-height:.98;letter-spacing:-.055em}
+.seo-service-hero>p{max-width:720px;margin-bottom:34px;color:#50545a;font-size:18px;line-height:1.7}
+.seo-service-content{display:grid;grid-template-columns:minmax(280px,.85fr) minmax(360px,1.15fr);gap:clamp(60px,9vw,140px);padding:90px 0;border-top:1px solid #cbc8c0}
+.seo-service-content h2{max-width:520px;margin-top:18px;font-size:clamp(34px,4vw,58px);line-height:1.04;letter-spacing:-.045em}
+.seo-service-copy{display:grid;gap:22px;color:#4d5156;font-size:17px;line-height:1.75}
+.seo-capabilities{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #cbc8c0;border-bottom:1px solid #cbc8c0}
+.seo-capabilities div{display:flex;gap:12px;align-items:center;padding:28px 20px;border-right:1px solid #cbc8c0;font-weight:650}
+.seo-capabilities div:last-child{border-right:0}.seo-capabilities svg{flex:0 0 auto;color:#0b78c7}
+.seo-service-footer{display:flex;justify-content:space-between;gap:36px;padding:52px 0 20px;color:#555b61}
+.seo-service-footer nav{display:flex;gap:28px}.seo-service-footer a{color:#111;font-weight:700;text-decoration:none}
+@media(max-width:760px){.seo-service-page{padding-top:110px}.seo-service-hero{padding-bottom:64px}.seo-service-content{grid-template-columns:1fr;gap:34px;padding:64px 0}.seo-capabilities{grid-template-columns:1fr 1fr}.seo-capabilities div:nth-child(2){border-right:0}.seo-capabilities div:nth-child(-n+2){border-bottom:1px solid #cbc8c0}.seo-service-footer{flex-direction:column}.seo-service-footer nav{flex-direction:column;gap:12px}}
+
 /* Ajuste pontual: localização centralizada e WhatsApp junto ao canto. */
 .footer-brand p{
   width:100%!important;
