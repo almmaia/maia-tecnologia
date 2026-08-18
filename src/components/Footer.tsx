@@ -30,10 +30,10 @@ function Footer() {
         <div className="footer-navigation footer-solutions">
           <h3>Soluções</h3>
           <div className="footer-links">
-            <Link to="/solucoes">Software sob medida</Link>
-            <Link to="/solucoes">APIs e integrações</Link>
-            <Link to="/solucoes">Automações</Link>
-            <Link to="/solucoes">Dados e inteligência</Link>
+            <Link to="/desenvolvimento-software-brasil">Software sob medida</Link>
+            <Link to="/sistemas-plataformas-web">Sistemas e plataformas</Link>
+            <Link to="/automacao-inteligencia-artificial">Automação e IA</Link>
+            <Link to="/desenvolvimento-software-florianopolis">Software em Florianópolis</Link>
           </div>
         </div>
 
