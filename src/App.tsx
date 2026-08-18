@@ -16,7 +16,7 @@ import "./index.css";
 const pageMetadata: Record<string, { title: string; description: string }> = {
   "/": {
     title: "Maia Tecnologia | Desenvolvimento de Software em Florianópolis",
-    description: "Empresa de desenvolvimento de software em Florianópolis, Santa Catarina. Sistemas, plataformas, automações, IA, APIs, dados e integrações com atendimento nacional.",
+    description: "Engenharia de software, sistemas, plataformas web, automação e inteligência artificial em Florianópolis, Santa Catarina, com atendimento em todo o Brasil.",
   },
   "/sobre": {
     title: "Sobre a Maia Tecnologia | Desenvolvimento de Software",
@@ -24,7 +24,7 @@ const pageMetadata: Record<string, { title: string; description: string }> = {
   },
   "/solucoes": {
     title: "Soluções em Software e Sistemas Personalizados | Maia Tecnologia",
-    description: "Desenvolvimento de sistemas, plataformas web, aplicações mobile, automações, APIs, dados, dashboards, integrações, inteligência artificial, cloud e suporte.",
+    description: "Software sob medida, sistemas, plataformas web, aplicativos, automações, APIs, dados, dashboards, inteligência artificial, cloud, DevOps e segurança.",
   },
   "/processo": {
     title: "Como trabalhamos | Maia Tecnologia",
@@ -46,9 +46,15 @@ function PageBehavior() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
     const metadata = pageMetadata[pathname] ?? pageMetadata["/"];
+    const canonical = `https://www.maiacyber.me${pathname === "/" ? "/" : pathname}`;
     document.title = metadata.title;
     document.querySelector('meta[name="description"]')?.setAttribute("content", metadata.description);
-    document.querySelector('link[rel="canonical"]')?.setAttribute("href", `https://www.maiacyber.me${pathname === "/" ? "/" : pathname}`);
+    document.querySelector('link[rel="canonical"]')?.setAttribute("href", canonical);
+    document.querySelector('meta[property="og:title"]')?.setAttribute("content", metadata.title);
+    document.querySelector('meta[property="og:description"]')?.setAttribute("content", metadata.description);
+    document.querySelector('meta[property="og:url"]')?.setAttribute("content", canonical);
+    document.querySelector('meta[name="twitter:title"]')?.setAttribute("content", metadata.title);
+    document.querySelector('meta[name="twitter:description"]')?.setAttribute("content", metadata.description);
   }, [pathname]);
 
   return null;

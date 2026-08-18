@@ -8,10 +8,6 @@
       name="description"
       content="A Maia Tecnologia desenvolve software sob medida, sistemas, plataformas, automações e inteligência artificial em Florianópolis, Santa Catarina, com atendimento em todo o Brasil."
     />
-    <meta
-      name="keywords"
-      content="desenvolvimento de software, empresa de software, software sob medida, sistemas personalizados, plataformas web, automação, inteligência artificial, integração de sistemas, APIs, dados, dashboards, Florianópolis, São José, Palhoça, Biguaçu, Blumenau, Joinville, Tubarão, Santa Catarina, Belém, Ananindeua, Pará, Brasil"
-    />
     <meta name="author" content="Maia Tecnologia" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <link rel="canonical" href="https://www.maiacyber.me/" />
@@ -32,31 +28,84 @@
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Maia Tecnologia — Engenharia e produtos digitais" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Maia Tecnologia | Desenvolvimento de Software em Florianópolis" />
+    <meta name="twitter:description" content="Engenharia de software, sistemas, automação e inteligência artificial com atendimento em todo o Brasil." />
     <meta name="twitter:image" content="https://www.maiacyber.me/brand/maia-tecnologia-share-2026.png" />
     <title>Maia Tecnologia | Desenvolvimento de Software em Florianópolis</title>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Maia Tecnologia",
-        "url": "https://www.maiacyber.me/",
-        "logo": "https://www.maiacyber.me/brand/maia-tecnologia-share-2026.png",
-        "email": "mailto:alanmaix@gmail.com",
-        "telephone": "+55 48 99814-1388",
-        "founder": {
-          "@type": "Person",
-          "name": "Alan Maia",
-          "jobTitle": "Fundador e Desenvolvedor de Software"
-        },
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Florianópolis",
-          "addressRegion": "SC",
-          "addressCountry": "BR"
-        },
-        "areaServed": ["Florianópolis", "Grande Florianópolis", "São José", "Palhoça", "Biguaçu", "Joinville", "Blumenau", "Tubarão", "Sul de Santa Catarina", "Santa Catarina", "Belém", "Ananindeua", "Região Metropolitana de Belém", "Marituba", "Benevides", "Castanhal", "Pará", "Região Sul", "Brasil"],
-        "knowsAbout": ["Engenharia de software", "Desenvolvimento de sistemas", "Software sob medida", "Produtos digitais", "Plataformas web", "Aplicações web", "Automação de processos", "APIs e integrações", "Dados e dashboards", "Inteligência artificial"],
-        "sameAs": ["https://www.instagram.com/maiacyber/"]
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://www.maiacyber.me/#website",
+            "url": "https://www.maiacyber.me/",
+            "name": "Maia Tecnologia",
+            "inLanguage": "pt-BR",
+            "publisher": { "@id": "https://www.maiacyber.me/#empresa" }
+          },
+          {
+            "@type": "ProfessionalService",
+            "@id": "https://www.maiacyber.me/#empresa",
+            "name": "Maia Tecnologia",
+            "url": "https://www.maiacyber.me/",
+            "logo": "https://www.maiacyber.me/brand/maia-tecnologia-share-2026.png",
+            "image": "https://www.maiacyber.me/brand/maia-tecnologia-share-2026.png",
+            "email": "alanmaix@gmail.com",
+            "telephone": "+55 48 99814-1388",
+            "priceRange": "$$",
+            "founder": {
+              "@type": "Person",
+              "name": "Alan Maia",
+              "jobTitle": "Fundador e Desenvolvedor de Software"
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Florianópolis",
+              "addressRegion": "SC",
+              "addressCountry": "BR"
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Florianópolis" },
+              { "@type": "AdministrativeArea", "name": "Grande Florianópolis" },
+              { "@type": "City", "name": "São José" },
+              { "@type": "City", "name": "Palhoça" },
+              { "@type": "City", "name": "Biguaçu" },
+              { "@type": "City", "name": "Tubarão" },
+              { "@type": "City", "name": "Blumenau" },
+              { "@type": "City", "name": "Joinville" },
+              { "@type": "State", "name": "Santa Catarina" },
+              { "@type": "City", "name": "Belém" },
+              { "@type": "City", "name": "Ananindeua" },
+              { "@type": "AdministrativeArea", "name": "Região Metropolitana de Belém" },
+              { "@type": "State", "name": "Pará" },
+              { "@type": "State", "name": "Paraná" },
+              { "@type": "Country", "name": "Brasil" }
+            ],
+            "knowsAbout": ["Engenharia de software", "Desenvolvimento de sistemas", "Software sob medida", "Produtos digitais", "Plataformas web", "Aplicações web", "Automação de processos", "APIs e integrações", "Dados e dashboards", "Inteligência artificial", "Cloud", "DevOps", "Segurança de aplicações"],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Soluções de tecnologia",
+              "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Desenvolvimento de software sob medida" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Desenvolvimento de sistemas e plataformas web" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Automação de processos" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Inteligência artificial aplicada" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "APIs e integração de sistemas" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dados, bancos de dados e dashboards" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cloud, DevOps e evolução de aplicações" } }
+              ]
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+55 48 99814-1388",
+              "contactType": "sales",
+              "areaServed": "BR",
+              "availableLanguage": "Portuguese"
+            },
+            "sameAs": ["https://www.instagram.com/maiacyber/"]
+          }
+        ]
       }
     </script>
   </head>
