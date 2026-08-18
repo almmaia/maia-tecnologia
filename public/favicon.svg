@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Maia Tecnologia">
+  <rect width="64" height="64" rx="12" fill="#071526"/>
+  <path d="M10 13 32 31v10L18 29v22l-8-7Z" fill="#159fe5" stroke="#71d1f5" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M54 13 32 31v10l14-12v22l8-7Z" fill="#cbd3da" stroke="#f4f7f9" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="m18 29 14 12v8l-7-6v12l-7-6Z" fill="#0b78c7"/>
+  <path d="m46 29-14 12v8l7-6v12l7-6Z" fill="#8e9aa5"/>
+</svg>
