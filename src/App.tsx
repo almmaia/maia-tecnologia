@@ -15,27 +15,27 @@ import "./index.css";
 
 const pageMetadata: Record<string, { title: string; description: string }> = {
   "/": {
-    title: "Maia Tecnologia | Desenvolvimento de Software em Florianópolis",
+    title: "Maia Tecnologia — Engenharia de Software em Florianópolis",
     description: "Engenharia de software, sistemas, plataformas web, automação e inteligência artificial em Florianópolis, Santa Catarina, com atendimento em todo o Brasil.",
   },
   "/sobre": {
-    title: "Sobre a Maia Tecnologia | Desenvolvimento de Software",
+    title: "Sobre a Maia Tecnologia — Engenharia de Software",
     description: "Conheça a Maia Tecnologia, empresa de desenvolvimento de software fundada por Alan Maia, sediada em Florianópolis, Santa Catarina, com atendimento nacional.",
   },
   "/solucoes": {
-    title: "Soluções em Software e Sistemas Personalizados | Maia Tecnologia",
+    title: "Soluções em Software e Sistemas | Maia Tecnologia — Engenharia de Software",
     description: "Software sob medida, sistemas, plataformas web, aplicativos, automações, APIs, dados, dashboards, inteligência artificial, cloud, DevOps e segurança.",
   },
   "/processo": {
-    title: "Como trabalhamos | Maia Tecnologia",
+    title: "Como trabalhamos | Maia Tecnologia — Engenharia de Software",
     description: "Do entendimento à evolução: conheça o processo da Maia Tecnologia para criar soluções digitais personalizadas.",
   },
   "/cases": {
-    title: "Cases e Experiências em Software | Maia Tecnologia",
+    title: "Cases de Software | Maia Tecnologia — Engenharia de Software",
     description: "Conheça experiências da Maia Tecnologia com plataformas, automações, integrações, dados, dashboards e produtos digitais.",
   },
   "/contato": {
-    title: "Fale com a Maia Tecnologia em Florianópolis | Solicite um orçamento",
+    title: "Fale com a Maia Tecnologia — Engenharia de Software em Florianópolis",
     description: "Fale com a Maia Tecnologia sobre sistemas, plataformas, automações, inteligência artificial, APIs, dados e projetos de software em Santa Catarina e todo o Brasil.",
   },
 };

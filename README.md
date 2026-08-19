@@ -1,4 +1,4 @@
-# Maia Tecnologia
+# Maia Tecnologia — Engenharia de Software
 
 Site institucional da Maia Tecnologia, empresa de engenharia de software, produtos digitais, automação e inteligência artificial.
 
