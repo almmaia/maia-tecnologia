@@ -1,6 +1,10 @@
-# React + TypeScript + Vite
+# Maia Tecnologia
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Site institucional da Maia Tecnologia, empresa de engenharia de software, produtos digitais, automação e inteligência artificial.
+
+Site oficial: https://www.maiacyber.me
+
+O projeto contém somente as páginas institucionais públicas do site: início, sobre, soluções, processo, cases e contato.
 
 Currently, two official plugins are available:
 

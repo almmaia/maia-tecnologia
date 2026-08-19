@@ -27,15 +27,6 @@ function Footer() {
           </div>
         </div>
 
-        <div className="footer-navigation footer-solutions">
-          <h3>Soluções</h3>
-          <div className="footer-links">
-            <Link to="/desenvolvimento-software-brasil">Software sob medida</Link>
-            <Link to="/sistemas-plataformas-web">Sistemas e plataformas</Link>
-            <Link to="/automacao-inteligencia-artificial">Automação e IA</Link>
-            <Link to="/desenvolvimento-software-florianopolis">Software em Florianópolis</Link>
-          </div>
-        </div>
 
         <div className="footer-contact">
           <h3>Redes e contato</h3>
