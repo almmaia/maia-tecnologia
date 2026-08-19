@@ -36,7 +36,6 @@ function Contato() {
             <span className="contact-label"><i><MapPin size={18} /></i> Localização</span>
             <strong>Florianópolis, Santa Catarina</strong>
             <small>Atendimento em todo o Brasil</small>
-            <small>Grande Florianópolis, Tubarão, Santa Catarina, Belém, Ananindeua, Pará e Paraná</small>
           </div>
         </div>
       </div>

@@ -5404,10 +5404,16 @@ body{background:#0a0c0f}
 /* Rodapé amplo: preserva os quatro blocos e reduz apenas o vazio vertical */
 @media(min-width:761px){
   .footer-content{
-    width:min(calc(100% - 80px),960px)!important;
+    width:min(calc(100% - 80px),1200px)!important;
+    grid-template-columns:minmax(280px,1.25fr) minmax(190px,.8fr) minmax(220px,1fr)!important;
+    justify-content:stretch!important;
+    column-gap:clamp(48px,6vw,96px)!important;
     padding-top:56px!important;
     row-gap:28px!important;
   }
+  .footer-brand{grid-column:1!important;grid-row:1!important;justify-self:start!important}
+  .footer-navigation{grid-column:2!important;grid-row:1!important;justify-self:start!important;width:100%!important}
+  .footer-contact{grid-column:3!important;grid-row:1!important;justify-self:start!important;width:100%!important}
   .footer-bottom{
     margin-top:32px!important;
     padding-top:20px!important;
