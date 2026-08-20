@@ -5694,3 +5694,11 @@ body{background:#0a0c0f}
   .footer-content .footer-navigation{width:220px!important;justify-self:center!important}
   .footer-content .footer-contact{width:300px!important;justify-self:end!important}
 }
+
+/* Home oficial: usa toda a largura disponível para separar os três eixos. */
+@media(min-width:1100px){
+  .footer-content{width:calc(100% - 112px)!important;max-width:none!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;column-gap:0!important}
+  .footer-brand{justify-self:start!important}
+  .footer-navigation{justify-self:center!important}
+  .footer-contact{justify-self:end!important}
+}
