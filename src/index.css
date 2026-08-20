@@ -5208,8 +5208,8 @@ body{background:#0a0c0f}
 @media (min-width: 981px){
   .footer-content{
     width:min(1180px,calc(100% - 112px))!important;
-    grid-template-columns:minmax(300px,1.25fr) minmax(180px,.8fr) minmax(220px,.9fr)!important;
-    column-gap:clamp(56px,7vw,112px)!important;
+    grid-template-columns:minmax(280px,1fr) minmax(180px,1fr) minmax(220px,1fr)!important;
+    column-gap:clamp(48px,6vw,96px)!important;
     row-gap:0!important;
     align-items:start!important;
     padding-top:58px!important;
@@ -5220,11 +5220,21 @@ body{background:#0a0c0f}
     justify-self:start!important;
     width:100%!important;
   }
-  .footer-brand{text-align:left!important}
-  .footer-brand .logo{justify-content:flex-start!important}
-  .footer-brand p{max-width:320px!important;margin:18px 0 0!important;text-align:left!important;white-space:normal!important}
-  .footer-navigation,.footer-contact{padding-top:4px!important}
+  .footer-brand{text-align:center!important}
+  .footer-brand .logo{justify-content:center!important}
+  .footer-brand p{max-width:360px!important;margin:18px auto 0!important;text-align:center!important;white-space:nowrap!important}
+  .footer-navigation{padding-top:4px!important;justify-self:center!important;width:max-content!important}
+  .footer-contact{padding-top:4px!important;justify-self:end!important;width:max-content!important}
   .footer-bottom{width:min(1180px,calc(100% - 112px))!important;margin-top:42px!important;padding-top:18px!important;padding-bottom:18px!important}
+}
+
+/* No rodapé, os três canais têm o mesmo tratamento visual; só o botão flutuante é verde. */
+.footer-contact .whatsapp-contact .social-icon,
+.footer-contact .whatsapp-contact:hover .social-icon{
+  color:inherit!important;
+}
+.footer-contact .whatsapp-contact{
+  color:#b7bdc1!important;
 }
 
 @media (min-width: 601px) and (max-width: 980px){
