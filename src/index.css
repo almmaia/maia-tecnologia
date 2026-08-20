@@ -5845,9 +5845,16 @@ body{background:#0a0c0f}
 }
 
 /* Régua visual solicitada: o início da navegação coincide com o eixo central. */
-@media(min-width:1100px){
+@media(min-width:1280px){
   .footer .footer-navigation{transform:translateX(110px)!important}
-  .footer .footer-contact{transform:translateX(12px)!important}
+  .footer .footer-brand .logo,.footer .footer-brand p{transform:translateX(-38px)!important}
+  .footer .footer-contact{transform:none!important}
+  .footer .footer-social-icons{display:grid!important;grid-template-columns:repeat(4,48px)!important;column-gap:14px!important;width:234px!important}
+}
+
+/* Entre notebook e desktop amplo, evita corte lateral e preserva as três colunas. */
+@media(min-width:1100px) and (max-width:1279px){
+  .footer .footer-navigation,.footer .footer-contact{transform:none!important}
   .footer .footer-social-icons{display:grid!important;grid-template-columns:repeat(4,48px)!important;column-gap:14px!important;width:234px!important}
 }
 
