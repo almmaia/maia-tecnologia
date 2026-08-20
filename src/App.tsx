@@ -55,10 +55,7 @@ function PageBehavior() {
     document.querySelector('meta[property="og:url"]')?.setAttribute("content", canonical);
     document.querySelector('meta[name="twitter:title"]')?.setAttribute("content", metadata.title);
     document.querySelector('meta[name="twitter:description"]')?.setAttribute("content", metadata.description);
-    document.querySelector('meta[name="robots"]')?.setAttribute(
-      "content",
-      pathname === "/contato" ? "noindex, follow" : "index, follow, max-image-preview:large",
-    );
+    document.querySelector('meta[name="robots"]')?.setAttribute("content", "index, follow, max-image-preview:large");
   }, [pathname]);
 
   return null;
