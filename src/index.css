@@ -4899,11 +4899,11 @@ html,body,#root,.app{width:100%;max-width:100%;min-width:0;background:#0a0c0f;ov
     grid-row:1!important;
     min-width:0!important;
   }
-  .footer-brand{justify-self:start!important;width:320px!important;text-align:center!important}
+  .footer-brand{justify-self:start!important;width:280px!important;text-align:center!important}
   .footer-brand .logo{justify-content:center!important}
-  .footer-brand p{max-width:320px!important;margin-left:auto!important;margin-right:auto!important;text-align:center!important;white-space:normal!important}
+  .footer-brand p{width:260px!important;max-width:260px!important;margin-left:auto!important;margin-right:auto!important;text-align:center!important;white-space:normal!important}
   .footer-navigation{justify-self:center!important;width:220px!important;text-align:left!important;padding-left:0!important}
-  .footer-contact{justify-self:end!important;width:300px!important;text-align:left!important;transform:translateX(clamp(72px,7vw,132px))!important}
+  .footer-contact{justify-self:end!important;width:300px!important;text-align:left!important;transform:translateX(clamp(160px,14vw,220px))!important}
 }
 @media(min-width:761px) and (max-width:1099px){
   .footer-content{display:grid!important;grid-template-columns:minmax(260px,1fr) minmax(220px,1fr)!important;column-gap:clamp(48px,8vw,96px)!important;row-gap:48px!important}
