@@ -4919,6 +4919,13 @@ html,body,#root,.app{width:100%;max-width:100%;min-width:0;background:#0a0c0f;ov
   .footer .footer-brand p{width:360px!important;max-width:none!important;white-space:nowrap!important;text-align:center!important;font-size:13px!important}
 }
 
+/* Eixos finais solicitados para a leitura do rodapé. */
+@media(min-width:1100px){
+  .footer .footer-brand{grid-column:1!important;justify-self:start!important;text-align:center!important}
+  .footer .footer-navigation{grid-column:2!important;justify-self:center!important;transform:translateX(50px)!important}
+  .footer .footer-contact{grid-column:3!important;justify-self:end!important;transform:translateX(100px)!important}
+}
+
 /* Distribuição final: três eixos iguais no rodapé amplo. */
 @media(min-width:1100px){
   .footer-content{grid-template-columns:repeat(3,minmax(0,1fr))!important;column-gap:0!important;justify-content:stretch!important}
