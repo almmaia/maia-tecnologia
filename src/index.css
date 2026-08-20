@@ -5702,3 +5702,11 @@ body{background:#0a0c0f}
   .footer-navigation{justify-self:center!important}
   .footer-contact{justify-self:end!important}
 }
+
+/* Ajuste visual final da home: conteúdo centralizado com três zonas amplas. */
+@media(min-width:1100px){
+  .footer-content{width:min(calc(100% - 230px),1135px)!important;max-width:1135px!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;column-gap:0!important}
+  .footer-brand{justify-self:start!important}
+  .footer-navigation{justify-self:center!important}
+  .footer-contact{justify-self:end!important}
+}
