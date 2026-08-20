@@ -5785,6 +5785,9 @@ body{background:#0a0c0f}
 .footer .footer-social-icons{flex-wrap:wrap!important;gap:14px!important}
 .footer .footer-bottom{margin-top:28px!important;padding-top:18px!important;padding-bottom:12px!important}
 
+/* Aproxima o encerramento dos cases do início do rodapé. */
+.cases-editorial-page{padding-bottom:48px!important}
+
 /* Rodapé consolidado: uma única distribuição para a versão ampla. */
 @media(min-width:1100px){
   .footer .footer-content{width:calc(100% - 160px)!important;max-width:none!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;column-gap:0!important;align-items:start!important}
