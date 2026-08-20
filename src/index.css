@@ -4899,8 +4899,8 @@ html,body,#root,.app{width:100%;max-width:100%;min-width:0;background:#0a0c0f;ov
   .footer-brand{text-align:center!important}
   .footer-brand .logo{justify-content:center!important}
   .footer-brand p{margin-left:auto!important;margin-right:auto!important;text-align:center!important}
-  .footer-navigation{text-align:left!important}
-  .footer-contact{text-align:left!important}
+  .footer-navigation{text-align:left!important;justify-self:center!important}
+  .footer-contact{text-align:left!important;justify-self:end!important}
 }
 
 /* Páginas de serviço: conteúdo editorial indexável sem alterar a home */
