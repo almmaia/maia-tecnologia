@@ -5787,6 +5787,7 @@ body{background:#0a0c0f}
 
 /* Aproxima o encerramento dos cases do início do rodapé. */
 .cases-editorial-page{padding-bottom:48px!important}
+.home-cta-editorial{padding-bottom:32px!important}
 
 /* Rodapé consolidado: uma única distribuição para a versão ampla. */
 @media(min-width:1100px){
