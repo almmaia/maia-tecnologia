@@ -4894,8 +4894,8 @@ html,body,#root,.app{width:100%;max-width:100%;min-width:0;background:#0a0c0f;ov
   .footer-content{display:grid!important;grid-template-columns:280px minmax(220px,1fr) 300px!important;column-gap:clamp(90px,9vw,150px)!important;align-items:start!important}
   .footer-brand{grid-column:1!important;grid-row:1!important;justify-self:start!important;width:280px!important;text-align:center!important}
   .footer-brand .logo{justify-content:center!important}
-  .footer-brand p{width:260px!important;max-width:260px!important;margin:18px auto 0!important;text-align:center!important;white-space:normal!important}
-  .footer-navigation{grid-column:2!important;grid-row:1!important;justify-self:center!important;width:220px!important;text-align:left!important;padding:0!important}
+  .footer-brand p{width:320px!important;max-width:320px!important;margin:18px auto 0!important;text-align:center!important;white-space:nowrap!important}
+  .footer-navigation{grid-column:2!important;grid-row:1!important;justify-self:center!important;width:220px!important;text-align:left!important;padding:0!important;transform:translateX(72px)!important}
   .footer-contact{grid-column:3!important;grid-row:1!important;justify-self:end!important;width:300px!important;text-align:left!important;transform:none!important}
 }
 @media(min-width:761px) and (max-width:1099px){
