@@ -5203,6 +5203,46 @@ html,body,#root,.app{width:100%;max-width:100%;min-width:0;background:#0a0c0f;ov
 
 html{background:#0a0c0f;scrollbar-color:#555b5f #0a0c0f}
 body{background:#0a0c0f}
+
+/* Rodapé final: composição equilibrada em desktop e leitura clara em telas menores. */
+@media (min-width: 981px){
+  .footer-content{
+    width:min(1180px,calc(100% - 112px))!important;
+    grid-template-columns:minmax(300px,1.25fr) minmax(180px,.8fr) minmax(220px,.9fr)!important;
+    column-gap:clamp(56px,7vw,112px)!important;
+    row-gap:0!important;
+    align-items:start!important;
+    padding-top:58px!important;
+  }
+  .footer-brand,.footer-navigation,.footer-contact{
+    grid-column:auto!important;
+    grid-row:1!important;
+    justify-self:start!important;
+    width:100%!important;
+  }
+  .footer-brand{text-align:left!important}
+  .footer-brand .logo{justify-content:flex-start!important}
+  .footer-brand p{max-width:320px!important;margin:18px 0 0!important;text-align:left!important;white-space:normal!important}
+  .footer-navigation,.footer-contact{padding-top:4px!important}
+  .footer-bottom{width:min(1180px,calc(100% - 112px))!important;margin-top:42px!important;padding-top:18px!important;padding-bottom:18px!important}
+}
+
+@media (min-width: 601px) and (max-width: 980px){
+  .footer-content{grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;column-gap:clamp(32px,8vw,72px)!important;row-gap:42px!important;align-items:start!important}
+  .footer-brand,.footer-navigation,.footer-contact{width:100%!important;justify-self:start!important;text-align:left!important;align-items:flex-start!important}
+  .footer-brand .logo{justify-content:flex-start!important}
+  .footer-brand p{margin-left:0!important;margin-right:0!important;text-align:left!important;white-space:normal!important}
+}
+
+@media (max-width: 600px){
+  .footer-content{grid-template-columns:1fr!important;gap:32px!important;text-align:left!important}
+  .footer-brand,.footer-navigation,.footer-contact{width:100%!important;justify-self:start!important;text-align:left!important;align-items:flex-start!important}
+  .footer-brand .logo{justify-content:flex-start!important}
+  .footer-brand p{margin-left:0!important;margin-right:0!important;text-align:left!important;white-space:normal!important}
+  .footer-links,.footer-contact .footer-social-icons{justify-content:flex-start!important;align-items:flex-start!important}
+  .footer-bottom{text-align:left!important}
+}
+
 .digital-scene{display:block!important}
 .hero-reveal{height:150vh!important;min-height:1050px!important}
 .hero-reveal .executive-hero-layout{
