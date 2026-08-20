@@ -5722,6 +5722,27 @@ body{background:#0a0c0f}
   .footer-content{grid-template-columns:1fr!important}
   .footer-brand,.footer-navigation,.footer-contact{width:100%!important;transform:none!important}
 }
+
+/* Alinhamento tipográfico final do rodapé. */
+.footer .footer-brand,
+.footer .footer-navigation,
+.footer .footer-contact{box-sizing:border-box!important}
+.footer .footer-brand{text-align:center!important}
+.footer .footer-brand p{display:block!important;width:100%!important;max-width:100%!important;margin:18px 0 0!important;text-align:center!important;white-space:normal!important;line-height:1.5!important}
+.footer .footer-navigation h3,
+.footer .footer-contact h3{margin:0 0 18px!important;text-align:left!important}
+.footer .footer-links{display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:10px!important}
+.footer .footer-social-icons{display:flex!important;align-items:center!important;justify-content:flex-start!important;gap:14px!important}
+@media(min-width:1100px){
+  .footer .footer-brand{width:280px!important;text-align:center!important}
+  .footer .footer-navigation{width:220px!important;transform:none!important;text-align:left!important}
+  .footer .footer-contact{width:300px!important;transform:none!important;text-align:left!important}
+}
+@media(min-width:761px) and (max-width:1099px){
+  .footer .footer-brand{width:100%!important;text-align:center!important}
+  .footer .footer-navigation{width:190px!important;transform:none!important}
+  .footer .footer-contact{width:220px!important;transform:none!important}
+}
 @media(max-width:760px){
   .footer .footer-content{display:grid!important;grid-template-columns:1fr!important;gap:32px!important}
   .footer .footer-brand,.footer .footer-navigation,.footer .footer-contact{grid-column:1!important;grid-row:auto!important;justify-self:stretch!important;width:100%!important;text-align:center!important}
