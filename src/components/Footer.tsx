@@ -29,7 +29,7 @@ function Footer() {
 
 
         <div className="footer-contact">
-          <h3>Canais</h3>
+          <h3>Redes e contato</h3>
           <div className="footer-social-icons" aria-label="Canais de contato da Maia Tecnologia">
           <a className="social-contact whatsapp-contact" href="https://wa.me/5548998141388?text=Olá%2C%20vim%20pelo%20site%20da%20Maia%20Tecnologia." target="_blank" rel="noreferrer" aria-label="Conversar com a Maia Tecnologia pelo WhatsApp" title="WhatsApp">
             <span className="social-icon"><FaWhatsapp size={19} /></span>
