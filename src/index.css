@@ -5855,3 +5855,11 @@ body{background:#0a0c0f}
 @media(min-width:900px) and (max-width:1099px){
   .footer .footer-navigation{transform:translateX(95px)!important}
 }
+
+/* Refinamento pedido: marca e canais centralizados, sem alterar a navegação. */
+@media(min-width:761px){
+  .footer .footer-brand{text-align:center!important}
+  .footer .footer-brand .logo{margin-left:auto!important;margin-right:auto!important;justify-content:center!important}
+  .footer .footer-brand p{margin-left:auto!important;margin-right:auto!important;text-align:center!important}
+  .footer .footer-contact h3{width:100%!important;text-align:center!important}
+}
