@@ -5841,7 +5841,7 @@ body{background:#0a0c0f}
   .footer .footer-brand p{width:100%!important;max-width:100%!important;margin-left:auto!important;margin-right:auto!important;text-align:center!important}
   .footer .footer-navigation h3,.footer .footer-contact h3{width:100%!important;text-align:center!important}
   .footer .footer-links{width:100%!important;align-items:center!important}
-  .footer .footer-social-icons{width:auto!important;margin-left:auto!important;margin-right:auto!important;flex-wrap:wrap!important;justify-content:center!important}
+  .footer .footer-social-icons{display:grid!important;grid-template-columns:repeat(4,40px)!important;justify-content:space-between!important;width:100%!important;margin-left:auto!important;margin-right:auto!important;column-gap:0!important}
 }
 
 /* Régua visual solicitada: o início da navegação coincide com o eixo central. */
