@@ -5850,6 +5850,7 @@ body{background:#0a0c0f}
   .footer .footer-brand .logo,.footer .footer-brand p{transform:translateX(-38px)!important}
   .footer .footer-contact{transform:none!important}
   .footer .footer-social-icons{display:grid!important;grid-template-columns:repeat(4,48px)!important;column-gap:14px!important;width:234px!important}
+  .footer .footer-bottom span{display:inline-block!important;transform:translateX(110px)!important}
 }
 
 /* Entre notebook e desktop amplo, evita corte lateral e preserva as três colunas. */
