@@ -5710,3 +5710,15 @@ body{background:#0a0c0f}
   .footer-navigation{justify-self:center!important}
   .footer-contact{justify-self:end!important}
 }
+
+/* Responsivo intermediário: três blocos continuam alinhados no notebook/tablet. */
+@media(min-width:761px) and (max-width:1099px){
+  .footer-content{width:calc(100% - 64px)!important;max-width:none!important;display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;column-gap:24px!important;row-gap:0!important;align-items:start!important}
+  .footer-brand{grid-column:1!important;grid-row:1!important;justify-self:start!important;width:100%!important;text-align:center!important}
+  .footer-navigation{grid-column:2!important;grid-row:1!important;justify-self:center!important;width:190px!important;transform:none!important}
+  .footer-contact{grid-column:3!important;grid-row:1!important;justify-self:end!important;width:220px!important;transform:none!important}
+}
+@media(max-width:760px){
+  .footer-content{grid-template-columns:1fr!important}
+  .footer-brand,.footer-navigation,.footer-contact{width:100%!important;transform:none!important}
+}
