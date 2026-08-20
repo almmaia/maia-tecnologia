@@ -5776,3 +5776,11 @@ body{background:#0a0c0f}
   .footer .footer-navigation{grid-column:2!important;justify-self:center!important;width:220px!important;transform:translateX(110px)!important}
   .footer .footer-contact{grid-column:3!important;justify-self:end!important;width:300px!important;transform:translateX(170px)!important}
 }
+
+/* Fechamento visual do rodapé oficial. */
+@media(min-width:761px){
+  .footer .footer-brand{width:360px!important;text-align:center!important}
+  .footer .footer-brand p{width:360px!important;max-width:none!important;margin:18px 0 0!important;text-align:center!important;white-space:normal!important;line-height:1.55!important}
+}
+.footer .footer-social-icons{flex-wrap:wrap!important;gap:14px!important}
+.footer .footer-bottom{margin-top:28px!important;padding-top:18px!important;padding-bottom:12px!important}

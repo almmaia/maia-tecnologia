@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail } from "lucide-react";
-import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp, FaLinkedinIn } from "react-icons/fa";
 import BrandMark from "./BrandMark";
 
 function Footer() {
@@ -12,7 +12,7 @@ function Footer() {
             <BrandMark variant="vertical" />
           </Link>
 
-          <p>Florianópolis, Santa Catarina <span aria-hidden="true">•</span> Atendimento nacional</p>
+          <p>Florianópolis, Santa Catarina<br />Atendimento nacional</p>
         </div>
 
         <div className="footer-navigation">
@@ -39,6 +39,9 @@ function Footer() {
           </a>
           <a className="social-contact" href="https://www.instagram.com/maiacyber/" target="_blank" rel="noreferrer" aria-label="Abrir o Instagram da Maia Tecnologia" title="Instagram">
             <span className="social-icon"><FaInstagram size={19} /></span>
+          </a>
+          <a className="social-contact" href="https://www.linkedin.com/company/maia-tecnologia/" target="_blank" rel="noreferrer" aria-label="Abrir o LinkedIn da Maia Tecnologia" title="LinkedIn">
+            <span className="social-icon"><FaLinkedinIn size={18} /></span>
           </a>
           </div>
         </div>
