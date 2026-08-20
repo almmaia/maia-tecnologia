@@ -5768,3 +5768,11 @@ body{background:#0a0c0f}
   .footer .footer-brand,.footer .footer-navigation,.footer .footer-contact{grid-column:1!important;grid-row:auto!important;justify-self:stretch!important;width:100%!important;text-align:center!important}
   .footer .footer-navigation ul{align-items:center!important}
 }
+/* OVERRIDE ABSOLUTO DO RODAPÉ - última regra */
+@media(min-width:1100px){
+  .footer .footer-brand{grid-column:1!important;justify-self:start!important;width:360px!important;text-align:left!important}
+  .footer .footer-brand .logo{justify-content:center!important;width:280px!important}
+  .footer .footer-brand p{width:360px!important;max-width:none!important;text-align:left!important;white-space:nowrap!important;margin-left:0!important}
+  .footer .footer-navigation{grid-column:2!important;justify-self:center!important;width:220px!important;transform:translateX(110px)!important}
+  .footer .footer-contact{grid-column:3!important;justify-self:end!important;width:300px!important;transform:translateX(170px)!important}
+}
