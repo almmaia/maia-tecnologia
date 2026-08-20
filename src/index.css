@@ -5819,3 +5819,27 @@ body{background:#0a0c0f}
   .footer .footer-contact h3{margin-left:0!important}
   .footer .footer-social-icons{width:234px!important;flex-wrap:nowrap!important;justify-content:flex-start!important;gap:14px!important}
 }
+
+/* Notebook e tablet: três colunas iguais e navegação no centro real. */
+@media(min-width:761px) and (max-width:1099px){
+  .footer .footer-content{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;column-gap:0!important;align-items:start!important}
+  .footer .footer-brand{grid-column:1!important;justify-self:stretch!important;width:100%!important;text-align:center!important}
+  .footer .footer-brand .logo{width:100%!important;margin-left:auto!important;margin-right:auto!important;justify-content:center!important}
+  .footer .footer-brand p{width:100%!important;max-width:100%!important;margin-left:auto!important;margin-right:auto!important;text-align:center!important}
+  .footer .footer-navigation{grid-column:2!important;justify-self:center!important;width:190px!important;transform:none!important;text-align:left!important}
+  .footer .footer-navigation h3{width:190px!important;margin-left:0!important;text-align:left!important}
+  .footer .footer-links{width:190px!important;margin-left:0!important;align-items:flex-start!important}
+  .footer .footer-contact{grid-column:3!important;justify-self:end!important;width:220px!important;transform:none!important;text-align:left!important}
+  .footer .footer-social-icons{width:220px!important;flex-wrap:nowrap!important;justify-content:flex-start!important}
+}
+
+/* Celular e janela estreita: todos os blocos centralizados e sem deslocamento lateral. */
+@media(max-width:760px){
+  .footer .footer-content{display:grid!important;grid-template-columns:1fr!important;justify-items:center!important}
+  .footer .footer-brand,.footer .footer-navigation,.footer .footer-contact{justify-self:stretch!important;width:100%!important;transform:none!important;text-align:center!important}
+  .footer .footer-brand .logo{width:100%!important;margin-left:auto!important;margin-right:auto!important;justify-content:center!important}
+  .footer .footer-brand p{width:100%!important;max-width:100%!important;margin-left:auto!important;margin-right:auto!important;text-align:center!important}
+  .footer .footer-navigation h3,.footer .footer-contact h3{width:100%!important;text-align:center!important}
+  .footer .footer-links{width:100%!important;align-items:center!important}
+  .footer .footer-social-icons{width:auto!important;margin-left:auto!important;margin-right:auto!important;flex-wrap:wrap!important;justify-content:center!important}
+}
