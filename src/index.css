@@ -5809,9 +5809,9 @@ body{background:#0a0c0f}
 
 /* Ajuste final dos eixos: marca centralizada, navegação coerente e contato no extremo direito. */
 @media(min-width:1100px){
-  .footer .footer-brand{justify-self:start!important;text-align:center!important}
-  .footer .footer-brand .logo{margin-left:auto!important;margin-right:auto!important;justify-content:center!important}
-  .footer .footer-brand p{margin-left:0!important;margin-right:0!important;text-align:center!important;white-space:normal!important}
+  .footer .footer-brand{justify-self:start!important;text-align:left!important}
+  .footer .footer-brand .logo{width:280px!important;margin-left:0!important;margin-right:0!important;justify-content:flex-start!important}
+  .footer .footer-brand p{width:280px!important;margin-left:0!important;margin-right:0!important;text-align:left!important;white-space:normal!important}
   .footer .footer-navigation{justify-self:center!important;text-align:left!important}
   .footer .footer-navigation h3{text-align:left!important;margin-left:0!important}
   .footer .footer-links{align-items:flex-start!important;margin-left:0!important}
@@ -5823,9 +5823,9 @@ body{background:#0a0c0f}
 /* Notebook e tablet: três colunas iguais e navegação no centro real. */
 @media(min-width:761px) and (max-width:1099px){
   .footer .footer-content{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;column-gap:0!important;align-items:start!important}
-  .footer .footer-brand{grid-column:1!important;justify-self:stretch!important;width:100%!important;text-align:center!important}
-  .footer .footer-brand .logo{width:100%!important;margin-left:auto!important;margin-right:auto!important;justify-content:center!important}
-  .footer .footer-brand p{width:100%!important;max-width:100%!important;margin-left:auto!important;margin-right:auto!important;text-align:center!important}
+  .footer .footer-brand{grid-column:1!important;justify-self:stretch!important;width:100%!important;text-align:left!important}
+  .footer .footer-brand .logo{width:100%!important;margin-left:0!important;margin-right:0!important;justify-content:flex-start!important}
+  .footer .footer-brand p{width:100%!important;max-width:100%!important;margin-left:0!important;margin-right:0!important;text-align:left!important}
   .footer .footer-navigation{grid-column:2!important;justify-self:center!important;width:190px!important;transform:none!important;text-align:left!important}
   .footer .footer-navigation h3{width:190px!important;margin-left:0!important;text-align:left!important}
   .footer .footer-links{width:190px!important;margin-left:0!important;align-items:flex-start!important}
