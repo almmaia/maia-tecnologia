@@ -4913,6 +4913,12 @@ html,body,#root,.app{width:100%;max-width:100%;min-width:0;background:#0a0c0f;ov
   .footer-contact{grid-column:2!important;grid-row:2!important}
 }
 
+/* Localização do rodapé: uma linha única alinhada ao centro da marca. */
+@media(min-width:761px){
+  .footer .footer-brand{width:360px!important}
+  .footer .footer-brand p{width:360px!important;max-width:none!important;white-space:nowrap!important;text-align:center!important;font-size:13px!important}
+}
+
 /* Distribuição final: três eixos iguais no rodapé amplo. */
 @media(min-width:1100px){
   .footer-content{grid-template-columns:repeat(3,minmax(0,1fr))!important;column-gap:0!important;justify-content:stretch!important}
