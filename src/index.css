@@ -5412,6 +5412,9 @@ body{background:#0a0c0f}
     row-gap:28px!important;
   }
   .footer-brand{grid-column:1!important;grid-row:1!important;justify-self:start!important}
+  .footer-brand{text-align:center!important}
+  .footer-brand .logo{justify-content:center!important}
+  .footer-brand p{max-width:360px!important;margin-left:auto!important;margin-right:auto!important;text-align:center!important;white-space:nowrap!important}
   .footer-navigation{grid-column:2!important;grid-row:1!important;justify-self:start!important;width:100%!important}
   .footer-contact{grid-column:3!important;grid-row:1!important;justify-self:start!important;width:100%!important}
   .footer-bottom{
