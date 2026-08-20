@@ -46,7 +46,10 @@ function PageBehavior() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
     const metadata = pageMetadata[pathname] ?? pageMetadata["/"];
-    const canonical = `https://www.maiacyber.me${pathname === "/" ? "/" : pathname}`;
+    // A home é a identidade principal da marca; páginas internas continuam acessíveis.
+    const canonical = pathname === "/contato"
+      ? "https://www.maiacyber.me/"
+      : `https://www.maiacyber.me${pathname === "/" ? "/" : pathname}`;
     document.title = metadata.title;
     document.querySelector('meta[name="description"]')?.setAttribute("content", metadata.description);
     document.querySelector('link[rel="canonical"]')?.setAttribute("href", canonical);
