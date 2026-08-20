@@ -4888,9 +4888,9 @@ html,body,#root,.app{width:100%;max-width:100%;min-width:0;background:#0a0c0f;ov
 /* Distribuição final do rodapé: três colunas reais, com respiro entre elas. */
 @media(min-width:1100px){
   .footer-content{
-    grid-template-columns:repeat(3,minmax(0,1fr))!important;
-    column-gap:clamp(64px,6vw,96px)!important;
-    justify-content:stretch!important;
+    grid-template-columns:minmax(280px,300px) minmax(210px,240px) minmax(280px,300px)!important;
+    column-gap:0!important;
+    justify-content:space-between!important;
   }
   .footer-brand,.footer-navigation,.footer-contact{
     grid-column:auto!important;
