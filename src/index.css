@@ -4888,7 +4888,7 @@ html,body,#root,.app{width:100%;max-width:100%;min-width:0;background:#0a0c0f;ov
 /* Distribuição final do rodapé: três colunas reais, com respiro entre elas. */
 @media(min-width:1100px){
   .footer-content{
-    grid-template-columns:300px 210px 300px!important;
+    grid-template-columns:360px 300px minmax(300px,1fr)!important;
     column-gap:0!important;
     justify-content:space-between!important;
   }
@@ -4899,8 +4899,9 @@ html,body,#root,.app{width:100%;max-width:100%;min-width:0;background:#0a0c0f;ov
   .footer-brand{text-align:center!important}
   .footer-brand .logo{justify-content:center!important}
   .footer-brand p{margin-left:auto!important;margin-right:auto!important;text-align:center!important}
-  .footer-navigation{text-align:left!important;justify-self:center!important}
+  .footer-navigation{text-align:left!important;justify-self:start!important;padding-left:64px!important}
   .footer-contact{text-align:left!important;justify-self:end!important}
+  .footer-brand p{max-width:300px!important;white-space:normal!important}
 }
 
 /* Páginas de serviço: conteúdo editorial indexável sem alterar a home */
