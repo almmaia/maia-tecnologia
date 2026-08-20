@@ -5688,3 +5688,9 @@ body{background:#0a0c0f}
   .footer-navigation{grid-column:2!important;justify-self:center!important;width:220px!important;transform:none!important}
   .footer-contact{grid-column:3!important;justify-self:end!important;width:300px!important;transform:none!important}
 }
+
+/* Ajuste de largura interna dos eixos do rodapé. */
+@media(min-width:1100px){
+  .footer-content .footer-navigation{width:220px!important;justify-self:center!important}
+  .footer-content .footer-contact{width:300px!important;justify-self:end!important}
+}
