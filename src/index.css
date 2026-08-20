@@ -5794,6 +5794,7 @@ body{background:#0a0c0f}
   .footer .footer-navigation{transform:translateX(110px)!important}
   .footer .footer-contact{transform:translateX(170px)!important}
   .footer .footer-social-icons{flex-wrap:nowrap!important;justify-content:flex-start!important}
+  .footer .footer-navigation h3{text-align:center!important}
 }
 
 /* Rodapé consolidado: uma única distribuição para a versão ampla. */
