@@ -5629,8 +5629,8 @@ body{background:#0a0c0f}
   .footer-brand{grid-column:1!important;grid-row:1!important;width:280px!important;text-align:center!important}
   .footer-brand .logo{justify-content:center!important}
   .footer-brand p{width:220px!important;max-width:220px!important;margin:18px auto 0!important;text-align:center!important;white-space:normal!important;line-height:1.5!important}
-  .footer-navigation{grid-column:2!important;grid-row:1!important;justify-self:stretch!important;width:220px!important;text-align:left!important;padding:0!important;transform:none!important}
-  .footer-contact{grid-column:3!important;grid-row:1!important;justify-self:end!important;width:300px!important;text-align:left!important;transform:none!important}
+  .footer-navigation{grid-column:2!important;grid-row:1!important;justify-self:stretch!important;width:220px!important;text-align:left!important;padding:0!important;transform:translateX(40px)!important}
+  .footer-contact{grid-column:3!important;grid-row:1!important;justify-self:end!important;width:300px!important;text-align:left!important;transform:translateX(70px)!important}
 }
 @media(min-width:761px) and (max-width:1099px){
   .footer-content{display:grid!important;grid-template-columns:minmax(260px,1fr) minmax(220px,1fr)!important;column-gap:64px!important;row-gap:42px!important}
