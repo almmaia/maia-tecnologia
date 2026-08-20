@@ -4992,9 +4992,10 @@ html,body,#root,.app{width:100%;max-width:100%;min-width:0;background:#0a0c0f;ov
 @media(min-width:1100px){
   .footer-content{
     width:min(calc(100% - 112px),1120px)!important;
-    grid-template-columns:1.25fr .9fr .9fr .85fr!important;
+    /* O rodapé tem três blocos visuais: marca, navegação e contatos. */
+    grid-template-columns:minmax(300px,1.15fr) minmax(230px,.9fr) minmax(280px,1fr)!important;
     align-items:start!important;
-    column-gap:clamp(44px,5vw,78px)!important;
+    column-gap:clamp(72px,7vw,112px)!important;
     row-gap:0!important;
     padding-top:46px!important;
   }
