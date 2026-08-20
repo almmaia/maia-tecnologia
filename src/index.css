@@ -5722,3 +5722,8 @@ body{background:#0a0c0f}
   .footer-content{grid-template-columns:1fr!important}
   .footer-brand,.footer-navigation,.footer-contact{width:100%!important;transform:none!important}
 }
+@media(max-width:760px){
+  .footer .footer-content{display:grid!important;grid-template-columns:1fr!important;gap:32px!important}
+  .footer .footer-brand,.footer .footer-navigation,.footer .footer-contact{grid-column:1!important;grid-row:auto!important;justify-self:stretch!important;width:100%!important;text-align:center!important}
+  .footer .footer-navigation ul{align-items:center!important}
+}
