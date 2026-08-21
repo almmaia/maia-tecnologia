@@ -6082,29 +6082,29 @@ body{background:#0a0c0f}
 }
 @media(max-width:420px){
   .hero-badge{
-    font-size:9px!important;
+    font-size:11px!important;
     letter-spacing:0!important;
   }
   .footer .footer-content{row-gap:20px!important}
   .footer .brand-mark-vertical .brand-word{font-size:32px!important}
   .footer .brand-mark-vertical .brand-discipline{font-size:8px!important}
-  .footer .brand-mark-vertical em{font-size:7.5px!important}
+  .footer .brand-mark-vertical em{font-size:9.5px!important}
   .footer .footer-brand p{
     max-width:140px!important;
-    font-size:12px!important;
+    font-size:13px!important;
     text-align:center!important;
   }
   .footer .footer-navigation h3,
-  .footer .footer-contact h3{font-size:12px!important}
-  .footer .footer-links a{font-size:12px!important}
+  .footer .footer-contact h3{font-size:13px!important}
+  .footer .footer-links a{font-size:13px!important}
   .footer .footer-contact{
     row-gap:8px!important;
     margin-top:0!important;
   }
   .footer .footer-contact h3{margin-bottom:0!important}
   .footer .footer-social-icons .social-contact{
-    width:40px!important;
-    min-width:40px!important;
-    height:40px!important;
+    width:42px!important;
+    min-width:42px!important;
+    height:42px!important;
   }
 }
