@@ -6579,3 +6579,40 @@ body{background:#0a0c0f}
   .footer .footer-content{padding-top:34px!important;padding-bottom:22px!important}
   .footer .footer-bottom{margin-top:16px!important;padding-top:14px!important}
 }
+
+/* Ajuste final do telefone real: mantém tablet e desktop intactos. */
+@media(max-width:600px){
+  .hero-reveal .hero-badge{
+    font-size:12px!important;
+    line-height:1.4!important;
+  }
+  .hero-reveal h1{
+    font-size:clamp(42px,12.5vw,48px)!important;
+    line-height:.96!important;
+  }
+  .hero-reveal .hero-description{
+    font-size:16px!important;
+    line-height:1.62!important;
+  }
+  .immersive-story{
+    height:190vh!important;
+    min-height:0!important;
+  }
+  .work-intro-grid,
+  .home-cta-content{
+    width:calc(100% - 32px)!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+  .selected-work h2{
+    font-size:24px!important;
+    line-height:1.06!important;
+    letter-spacing:-.035em!important;
+  }
+  .home-cta{
+    padding-top:72px!important;
+  }
+  .footer .footer-navigation{
+    justify-self:center!important;
+  }
+}
