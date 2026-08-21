@@ -6262,10 +6262,10 @@ body{background:#0a0c0f}
 /* Segunda largura: mantém a navegação intacta e alinha os blocos do rodapé. */
 @media(min-width:601px) and (max-width:760px){
   .footer .footer-brand p{
-    width:100%!important;
+    width:207px!important;
     max-width:100%!important;
-    margin-left:auto!important;
-    margin-right:auto!important;
+    margin-left:0!important;
+    margin-right:0!important;
     text-align:center!important;
   }
   .footer .footer-contact{
