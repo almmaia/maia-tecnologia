@@ -6184,3 +6184,46 @@ body{background:#0a0c0f}
     font-size:11px!important;
   }
 }
+
+/* Ritmo e alinhamento específicos da tela estreita. */
+@media(max-width:760px){
+  .work-intro{padding:72px 0!important}
+  .work-intro-grid{
+    grid-template-columns:1fr!important;
+    gap:22px!important;
+  }
+  .work-intro-grid p{align-self:auto!important;margin:0!important}
+  .outcome-list{margin-top:38px!important}
+  .selected-work{padding:76px 0!important}
+  .selected-work-head{gap:22px!important}
+  .selected-work-list{margin-top:38px!important}
+}
+
+@media(max-width:600px){
+  .footer .footer-content{
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+    column-gap:24px!important;
+    row-gap:34px!important;
+  }
+  .footer .footer-brand{
+    align-items:center!important;
+    text-align:center!important;
+  }
+  .footer .footer-brand .logo{justify-content:center!important}
+  .footer .footer-brand p{
+    max-width:150px!important;
+    margin:18px auto 0!important;
+    text-align:center!important;
+  }
+  .footer .footer-navigation{
+    justify-self:end!important;
+    width:max-content!important;
+    max-width:100%!important;
+  }
+  .footer .footer-contact{
+    align-items:center!important;
+    text-align:center!important;
+  }
+  .footer .footer-contact h3{text-align:center!important}
+  .footer .footer-social-icons{justify-content:center!important}
+}
