@@ -6258,3 +6258,31 @@ body{background:#0a0c0f}
     letter-spacing:.045em!important;
   }
 }
+
+/* Segunda largura: mantém a navegação intacta e alinha os blocos do rodapé. */
+@media(min-width:601px) and (max-width:760px){
+  .footer .footer-brand p{
+    width:100%!important;
+    max-width:100%!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    text-align:center!important;
+  }
+  .footer .footer-contact{
+    display:flex!important;
+    flex-direction:column!important;
+    justify-self:center!important;
+    width:max-content!important;
+    max-width:100%!important;
+    align-items:center!important;
+    text-align:center!important;
+  }
+  .footer .footer-contact h3{
+    width:100%!important;
+    text-align:center!important;
+  }
+  .footer .footer-social-icons{
+    width:auto!important;
+    justify-content:center!important;
+  }
+}
