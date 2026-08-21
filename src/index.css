@@ -6437,6 +6437,16 @@ body{background:#0a0c0f}
   .footer .footer-bottom{width:calc(100% - 32px)!important}
 }
 
+/* Tela intermediaria: preserva a margem lateral sem afetar desktop ou celular. */
+@media(min-width:680px) and (max-width:760px){
+  .work-intro-grid,
+  .home-cta-content{
+    width:calc(100% - 48px)!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+}
+
 @media(min-width:601px) and (max-width:679px){
   .footer .footer-content{
     width:calc(100% - 40px)!important;
