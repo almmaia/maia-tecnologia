@@ -6445,6 +6445,17 @@ body{background:#0a0c0f}
     margin-left:auto!important;
     margin-right:auto!important;
   }
+  .footer .footer-content{
+    grid-template-rows:auto!important;
+    row-gap:0!important;
+  }
+  .footer .footer-contact h3{
+    width:220px!important;
+    text-align:center!important;
+  }
+  .footer .footer-social-icons{
+    justify-content:center!important;
+  }
 }
 
 @media(min-width:601px) and (max-width:679px){
