@@ -6347,15 +6347,19 @@ body{background:#0a0c0f}
     justify-self:end!important;
     width:234px!important;
     transform:none!important;
-    text-align:left!important;
+    align-items:center!important;
+    text-align:center!important;
   }
-  .footer .footer-contact h3{text-align:left!important}
+  .footer .footer-contact h3{
+    width:100%!important;
+    text-align:center!important;
+  }
   .footer .footer-social-icons{
     width:234px!important;
     display:grid!important;
     grid-template-columns:repeat(4,48px)!important;
     gap:14px!important;
-    justify-content:start!important;
+    justify-content:center!important;
   }
   .footer .footer-bottom{width:min(calc(100% - 160px),1600px)!important}
 }
