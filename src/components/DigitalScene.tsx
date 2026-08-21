@@ -5,7 +5,7 @@ type DigitalSceneProps = {
 
 const storyMedia = [
   { type: "image", src: "/visuals/story-context-pexels.jpg" },
-  { type: "image", src: "/cases/experience-automation-v3.png" },
+  { type: "image", src: "https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&fit=crop&w=1800&q=85" },
   { type: "image", src: "/visuals/story-operation-pexels.jpg" },
 ];
 
@@ -14,7 +14,7 @@ function DigitalScene({ variant, phase = 0 }: DigitalSceneProps) {
     return (
       <div className="digital-scene digital-scene-hero" aria-hidden="true">
         <div className="real-visual real-visual-hero">
-          <img src="/cases/experience-health-intelligence-v7.png" alt="" decoding="async" fetchPriority="high" />
+          <img src="https://images.unsplash.com/photo-1643959144243-8ac12487c287?auto=format&fit=crop&w=1800&q=85" alt="" decoding="async" fetchPriority="high" />
           <div className="real-visual-depth depth-back" />
           <div className="real-visual-depth depth-front" />
         </div>

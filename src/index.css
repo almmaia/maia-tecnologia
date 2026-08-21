@@ -6119,17 +6119,14 @@ body{background:#0a0c0f}
     display:none!important;
   }
   .hero-badge{
-    display:flex!important;
-    flex-wrap:wrap!important;
-    gap:0 .55em!important;
+    display:block!important;
     width:100%!important;
     max-width:100%!important;
-    white-space:normal!important;
-    font-size:12px!important;
+    white-space:nowrap!important;
+    font-size:clamp(10.5px,2.75vw,12px)!important;
     line-height:1.45!important;
-    letter-spacing:.025em!important;
+    letter-spacing:0!important;
   }
-  .hero-badge span{white-space:nowrap!important}
   .footer .brand-mark-vertical .brand-mark-caption{
     font-size:11px!important;
     line-height:1.4!important;
