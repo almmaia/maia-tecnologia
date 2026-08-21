@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { FormEvent } from "react";
 import { Send, X } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
@@ -9,6 +9,23 @@ function WhatsAppButton() {
   const [open, setOpen] = useState(false);
   const [message, setMessage] = useState("");
   const [assistantReply, setAssistantReply] = useState("");
+  const [footerVisible, setFooterVisible] = useState(false);
+
+  useEffect(() => {
+    const footer = document.querySelector(".footer");
+    if (!footer) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setFooterVisible(entry.isIntersecting);
+        if (entry.isIntersecting) setOpen(false);
+      },
+      { threshold: 0.08 },
+    );
+
+    observer.observe(footer);
+    return () => observer.disconnect();
+  }, []);
 
 
   const sendMessage = (event: FormEvent) => {
@@ -30,7 +47,7 @@ function WhatsAppButton() {
   const whatsappUrl = `${baseUrl}?text=${encodeURIComponent(message.trim() || "Olá, vim pelo site da Maia Tecnologia e gostaria de conversar sobre um projeto.")}`;
 
   return (
-    <div className={open ? "whatsapp-assistant open" : "whatsapp-assistant"}>
+    <div className={`whatsapp-assistant${open ? " open" : ""}${footerVisible ? " footer-visible" : ""}`}>
       {open && (
         <div className="whatsapp-panel" role="dialog" aria-label="Atendimento pelo WhatsApp">
           <header>
