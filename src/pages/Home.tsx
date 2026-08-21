@@ -101,7 +101,8 @@ function Home() {
         <div className="container hero-content executive-hero-layout">
           <div className="premium-hero-copy">
             <div className="hero-badge">
-              ENGENHARIA / PRODUTO / DADOS / AUTOMAÇÃO
+              <span>ENGENHARIA / PRODUTO</span>
+              <span>DADOS / AUTOMAÇÃO</span>
             </div>
 
             <h1>
