@@ -6329,7 +6329,18 @@ body{background:#0a0c0f}
     justify-self:center!important;
     width:220px!important;
     transform:none!important;
-    text-align:left!important;
+    text-align:center!important;
+  }
+  .footer .footer-navigation h3{
+    width:100%!important;
+    margin-left:0!important;
+    margin-right:0!important;
+    text-align:center!important;
+  }
+  .footer .footer-navigation .footer-links{
+    width:100%!important;
+    align-items:center!important;
+    text-align:center!important;
   }
   .footer .footer-contact{
     grid-column:3!important;
