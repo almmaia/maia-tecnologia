@@ -6304,9 +6304,9 @@ body{background:#0a0c0f}
   .footer .footer-content{
     width:min(calc(100% - 160px),1600px)!important;
     max-width:1600px!important;
-    position:relative!important;
-    display:block!important;
-    min-height:180px!important;
+    display:grid!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    column-gap:0!important;
     align-items:start!important;
   }
   .footer .footer-brand{
@@ -6325,20 +6325,16 @@ body{background:#0a0c0f}
     text-align:center!important;
   }
   .footer .footer-navigation{
-    position:absolute!important;
-    top:0!important;
-    left:50%!important;
+    grid-column:2!important;
+    justify-self:center!important;
     width:220px!important;
-    margin:0!important;
-    transform:translateX(-50%)!important;
+    transform:none!important;
     text-align:left!important;
   }
   .footer .footer-contact{
-    position:absolute!important;
-    top:0!important;
-    right:0!important;
+    grid-column:3!important;
+    justify-self:end!important;
     width:234px!important;
-    margin:0!important;
     transform:none!important;
     text-align:left!important;
   }
