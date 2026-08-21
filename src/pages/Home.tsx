@@ -186,7 +186,7 @@ function Home() {
       </section>
 
       <section className="product-film" aria-label="Tecnologia em movimento">
-        <video autoPlay muted loop playsInline preload="metadata">
+        <video autoPlay muted loop playsInline preload="auto">
           <source src="/video/ai-innovation-3d.mp4" type="video/mp4" />
         </video>
         <div className="product-film-caption" aria-hidden="true">
