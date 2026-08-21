@@ -6054,11 +6054,29 @@ body{background:#0a0c0f}
 }
 
 .whatsapp-assistant.footer-visible{
-  opacity:0!important;
-  visibility:hidden!important;
-  pointer-events:none!important;
-  transform:translateY(12px)!important;
+  right:8px!important;
+  bottom:58px!important;
+  opacity:1!important;
+  visibility:visible!important;
+  pointer-events:auto!important;
+  transform:none!important;
 }
 .whatsapp-assistant{
   transition:opacity .2s ease,transform .2s ease,visibility .2s ease!important;
+}
+
+/* Ajustes visuais confirmados em janela estreita. */
+.hero-badge{
+  white-space:nowrap!important;
+  font-size:clamp(6px,1.8vw,10px)!important;
+  letter-spacing:clamp(.05em,.2vw,.12em)!important;
+}
+.selected-work-list>a{
+  transition:padding .55s cubic-bezier(.2,.7,.2,1),background .55s ease,color .55s ease!important;
+}
+@media(max-width:760px){
+  .whatsapp-assistant.footer-visible{
+    right:8px!important;
+    bottom:58px!important;
+  }
 }
